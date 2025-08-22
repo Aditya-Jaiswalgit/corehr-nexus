@@ -8,6 +8,11 @@ import { AuthPage } from "./pages/AuthPage";
 import { MainLayout } from "./components/layout/MainLayout";
 import { Dashboard } from "./pages/Dashboard";
 import { Attendance } from "./pages/Attendance";
+import { Salaries } from "./pages/Salaries";
+import { Profile } from "./pages/Profile";
+import { Settings } from "./pages/Settings";
+import { HelpSupport } from "./pages/HelpSupport";
+import { Reports } from "./pages/Reports";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,13 +42,13 @@ const App = () => (
               <Route index element={<Navigate to="/dashboard" replace />} />
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="attendance" element={<Attendance />} />
-              <Route path="salaries" element={<div className="p-8 text-center text-muted-foreground">Salaries page coming soon...</div>} />
-              <Route path="profile" element={<div className="p-8 text-center text-muted-foreground">Profile page coming soon...</div>} />
-              <Route path="settings" element={<div className="p-8 text-center text-muted-foreground">Settings page coming soon...</div>} />
-              <Route path="help" element={<div className="p-8 text-center text-muted-foreground">Help & Support page coming soon...</div>} />
+              <Route path="salaries" element={<Salaries />} />
+              <Route path="profile" element={<Profile />} />
+              <Route path="settings" element={<Settings />} />
+              <Route path="help" element={<HelpSupport />} />
               <Route path="employees" element={<div className="p-8 text-center text-muted-foreground">Employee Management page coming soon...</div>} />
               <Route path="leaves" element={<div className="p-8 text-center text-muted-foreground">Leave Management page coming soon...</div>} />
-              <Route path="reports" element={<div className="p-8 text-center text-muted-foreground">Reports page coming soon...</div>} />
+              <Route path="reports" element={<Reports />} />
               <Route path="departments" element={<div className="p-8 text-center text-muted-foreground">Departments page coming soon...</div>} />
               <Route path="roles" element={<div className="p-8 text-center text-muted-foreground">Roles & Permissions page coming soon...</div>} />
             </Route>
